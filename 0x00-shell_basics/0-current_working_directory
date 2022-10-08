@@ -1,9 +1,2 @@
 #!/bin/bash
-
-path=$(which ls)
-echo ‘The absolute path is’ $path
-
-echo ‘-----------------------------------’
-
-DIR_PATH=$(dirname $path)
-echo ‘The directory path is’ $DIR_PATH
+echo $(dirname $(realpath 0-current_working_directory))
